@@ -14,6 +14,7 @@ exports.handler = async (event, context) => {
     
     try {
     const jsonParser =  await s3.getObject(params).promise()
+    console.log('jsonParser')
     const parsed = JSON.parse(jsonParser.Body)
     
     for (var i=0;i<jsonParser.length;i++){

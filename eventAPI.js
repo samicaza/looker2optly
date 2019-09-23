@@ -8,6 +8,7 @@ exports.targetFunctions = {
 }
 
 function eventAPI (visitorId,eventId,eventkey,eventuuid,eventtimestamp){
+  console.log('ran eventAPI')
     
     var visitor_id = visitorId
     var entity_id = eventId
